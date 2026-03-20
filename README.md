@@ -1,5 +1,5 @@
 # here is the link:
-[link](https://swedenflagcss.netlify.app)
+[link](general-profile-card-css.vercel.app)
 
 # preview image:
-![Alt Text](screenshotsfcss.png)
+![Alt Text](generelpfccss.png)
