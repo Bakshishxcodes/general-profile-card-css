@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0%;
+    height: 100vh;
+    background-image: url("bgcard.png");
+    background-size: cover;
+}
+
+.box {
+    height: 500px;  
+    width: 400px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(19, 19, 19);
+    border-radius: 20px;
+    border: solid black 2px;
+    box-shadow: 0 0 10px 3px rgb(6, 204, 6);
+    animation: float 2s ease-in-out infinite;
+}
+
+.upperband {
+    height: 160px;
+    width: 100%;
+    background-color: rgb(6, 204, 6);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.image {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+    height: 160px;
+    width: 160px;
+    background-color: rgb(0, 0, 0);
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name {
+    position: absolute;
+    top: 220px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 600;
+}
+.about{
+    position: absolute;
+    top: 250px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 300;
+}
+.dev{
+    color: rgb(6, 204, 6);
+    font-weight: 600;
+}
+.socialbox{
+    background-color: rgb(7, 7, 7);
+    height: 180px;
+    width: 360px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 385px;
+    border-radius: 15px;
+    z-index: 1;
+    box-shadow: 0 0 5px black;
+
+}
+.sociallabel{
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 95%;
+    color: white;
+    z-index: 2;
+    font-weight: 500;
+}
+.buttonsbar{
+    position: absolute;
+    top: 125px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.buttonbox{
+    margin: 0 15px;
+}
+
+.button{
+    background-color: rgb(6, 204, 6);
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    height: 40px;
+    width: 140px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    background-color: rgb(5, 141, 5);
+    transform: scale(1.04);
+    color: black;
+    box-shadow: 0 0 3px rgb(80, 241, 80);
+}
+.button:active{
+    background-color: rgb(144, 252, 117);
+    color: black;
+}
+@keyframes float{
+    0%{
+        transform: translate(-50%, -50%) translateY(0px);
+    }
+    50%{
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+    100%{
+        transform: translate(-50%, -50%) translateY(0px);
+    }
+}
+.socialbar{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 80px;
+    white-space: nowrap;
+}
+#github , #twitter , #linkedin{
+    font-size: 50px;
+    margin: 0 15px;
+    text-decoration: none;
+}
+#github i{
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    font-size: 50px;
+    transition: all 0.3s ease;
+}
+#linkedin i{
+    background-color: rgb(4, 121, 255);
+    color: white;
+    border-radius: 50%;
+    font-size: 40px;
+    border: solid rgb(4, 121, 255) 5px;
+    transition: all 0.3s ease;
+}
+#twitter i{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 40px;
+    transition: all 0.3s ease;
+    border: solid black 5px;
+}
+#github i:hover{
+    transform: scale(1.13);
+    box-shadow: 0 0 7px white;
+    color: rgb(31, 31, 31);
+}
+#twitter i:hover{
+    transform: scale(1.25);
+    box-shadow: 0 0 7px 5px rgb(32, 32, 32),
+                inset 0 0 4px black;
+    color: white;
+}
+#linkedin i:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 9px rgb(103, 174, 255);
+}
+
